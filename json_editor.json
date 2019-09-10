@@ -1,0 +1,54 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "占いくん",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FortuneTellingIntent",
+                    "slots": [
+                        {
+                            "name": "continue",
+                            "type": "continueType"
+                        }
+                    ],
+                    "samples": [
+                        "{continue}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "continueType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "いいえ"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "はい"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
